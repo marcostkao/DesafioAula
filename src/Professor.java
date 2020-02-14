@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Professor {
+public abstract class Professor {
     private String nome;
     private String sobrenome;
     private Integer tempoDeCasa;
@@ -57,4 +57,6 @@ public class Professor {
     public int hashCode() {
         return Objects.hash(codigoProfessor);
     }
+
+
 }
