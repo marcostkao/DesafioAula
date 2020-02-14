@@ -8,6 +8,7 @@ public class Curso {
     private ProfessorTilular professorTilular;
     private ProfessorAdjunto professorAdjunto;
     List<Aluno> lista = new ArrayList<>();
+    public Boolean adicionarUmAluno(Aluno umAluno);
 
 
     public Curso(String nome, Integer codigoCurso) {
@@ -69,6 +70,7 @@ public class Curso {
         return Objects.hash(codigoCurso);
     }
 
+    public void excluirAluno(Aluno umAluno);
 
 
 }
