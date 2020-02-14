@@ -12,4 +12,6 @@ public class ProfessorTilular {
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
+
+
 }

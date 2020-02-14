@@ -1,13 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Curso {
     private String nome;
     private Integer codigoCurso;
+    private ProfessorTilular professorTilular;
+    private ProfessorAdjunto professorAdjunto;
+    List<Aluno> lista = new ArrayList<>();
+
 
     public Curso(String nome, Integer codigoCurso) {
         this.nome = nome;
         this.codigoCurso = codigoCurso;
     }
+
 
     public String getNome() {
         return nome;
@@ -23,6 +30,30 @@ public class Curso {
 
     public void setCodigoCurso(Integer codigoCurso) {
         this.codigoCurso = codigoCurso;
+    }
+
+    public ProfessorTilular getProfessorTilular() {
+        return professorTilular;
+    }
+
+    public void setProfessorTilular(ProfessorTilular professorTilular) {
+        this.professorTilular = professorTilular;
+    }
+
+    public ProfessorAdjunto getProfessorAdjunto() {
+        return professorAdjunto;
+    }
+
+    public void setProfessorAdjunto(ProfessorAdjunto professorAdjunto) {
+        this.professorAdjunto = professorAdjunto;
+    }
+
+    public List<Aluno> getLista() {
+        return lista;
+    }
+
+    public void setLista(List<Aluno> lista) {
+        this.lista = lista;
     }
 
     @Override

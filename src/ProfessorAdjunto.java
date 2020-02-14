@@ -13,4 +13,7 @@ public class ProfessorAdjunto extends Professor {
     public void setQuantidadeHoras(Integer quantidadeHoras) {
         this.quantidadeHoras = quantidadeHoras;
     }
+
+
+
 }
