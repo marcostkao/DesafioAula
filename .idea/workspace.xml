@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0505437e-319f-4d35-8045-b830dfc5cb73" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigitalHouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigitalHouseManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,9 +47,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="415" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1581700728772">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="467" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1581903188528">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="415" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581700728772" />
+    <state x="467" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/329.-768.1360.738@0.0.1536.834" timestamp="1581903188528" />
+    <state x="431" y="155" key="search.everywhere.popup" timestamp="1581902748362">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" key="search.everywhere.popup/0.0.1536.834/329.-768.1360.738@0.0.1536.834" timestamp="1581902748362" />
   </component>
 </project>

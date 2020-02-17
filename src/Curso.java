@@ -3,19 +3,37 @@ import java.util.List;
 import java.util.Objects;
 
 public class Curso {
+
     private String nome;
     private Integer codigoCurso;
     private ProfessorTilular professorTilular;
     private ProfessorAdjunto professorAdjunto;
-    List<Aluno> lista = new ArrayList<>();
-    public Boolean adicionarUmAluno(Aluno umAluno);
+    private Integer quantidadeMaximaAlunos;
+    private List<Aluno> listaAlunosMatriculados = new ArrayList<>();
 
+    public Curso(){
 
-    public Curso(String nome, Integer codigoCurso) {
-        this.nome = nome;
-        this.codigoCurso = codigoCurso;
     }
 
+
+    public Curso(String nome, Integer codigoCurso, Integer quantidadeMaximaAlunos) {
+        this.nome = nome;
+        this.codigoCurso = codigoCurso;
+        this.quantidadeMaximaAlunos = quantidadeMaximaAlunos;
+    }
+
+    public Boolean adicionarUmAluno(Aluno umAluno){
+
+        if(listaAlunosMatriculados.size() < quantidadeMaximaAlunos ) {
+            listaAlunosMatriculados.add(umAluno);
+            return true;
+        }
+        return false;
+    }
+
+    public void excluirAluno(Aluno umAluno){
+        listaAlunosMatriculados.remove(umAluno);
+    }
 
     public String getNome() {
         return nome;
@@ -49,28 +67,26 @@ public class Curso {
         this.professorAdjunto = professorAdjunto;
     }
 
-    public List<Aluno> getLista() {
-        return lista;
+    public Integer getQuantidadeMaximaAlunos() {
+        return quantidadeMaximaAlunos;
     }
 
-    public void setLista(List<Aluno> lista) {
-        this.lista = lista;
+    public void setQuantidadeMaximaAlunos(Integer quantidadeMaximaAlunos) {
+        this.quantidadeMaximaAlunos = quantidadeMaximaAlunos;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Curso curso = (Curso) o;
-        return codigoCurso.equals(curso.codigoCurso);
+    public List<Aluno> getListaAlunosMatriculados() {
+        return listaAlunosMatriculados;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(codigoCurso);
+    public void setListaAlunosMatriculados(List<Aluno> listaAlunosMatriculados) {
+        this.listaAlunosMatriculados = listaAlunosMatriculados;
     }
 
-    public void excluirAluno(Aluno umAluno);
-
-
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Curso{" +
+                "codigoCurso=" + codigoCurso +
+                '}';
+    }
 }
